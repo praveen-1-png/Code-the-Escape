@@ -1,0 +1,39 @@
+int Solution::solve(vector<int> &A, int B) {
+    int c=0;
+    for(int i=0;i<A.size()-1;i++){
+        if(A[i]>A[i+1]){
+            c=i;
+            break;
+        }
+    }
+    int left=0;
+    int right=c-1;
+    while(left<=right){
+        int mid=left+(right-left)/2;
+        if(A[mid]==B){
+            return mid;
+        }
+        if(A[mid]<B){
+            left=mid+1;
+        }
+        if(A[mid]>B){
+            right=mid-1;
+        }
+    }
+    left=c;
+    right=A.size()-1;
+    while(left<=right){
+        int mid=left+(right-left)/2;
+        if(A[mid]==B){
+            return mid;
+        }
+        if(A[mid]<B){
+            right=mid-1;
+        }
+        else{
+            left=mid+1;
+        }
+    }
+    return -1;
+    
+}

@@ -1,0 +1,28 @@
+int Solution::findCount(const vector<int> &A, int B) {
+    
+    int left=0;
+    int right=A.size()-1;
+    while(left<=right){
+        int mid=(left+right)/2;
+        if(A[mid]<=B){
+            left=mid+1;
+        }
+        if(A[mid]>B){
+            right=mid-1;
+        }
+    }
+    int d=right;
+    left=0;
+    right=A.size()-1;
+    while(left<=right){
+        int mid=(left+right)/2;
+        if(A[mid]<B){
+            left=mid+1;
+        }
+        if(A[mid]>=B){
+            right=mid-1;
+        }
+    }
+    int c=left;
+    return d-c+1;
+}

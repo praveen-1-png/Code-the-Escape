@@ -1,0 +1,30 @@
+int Solution::solve(vector<int>& A, int B) {
+    int left = 0;
+    int right=A[0];
+    for(int i=0;i<A.size();i++){
+        if(A[i]>right){
+            right=A[i];
+        }
+    }
+    long total_wood = 0;
+    int max_H = 0;
+    
+    while (left <= right) {
+        int mid = left + (right - left)/2;
+        long curr_wood = 0;
+        
+        for (int height : A) {
+            if (height > mid) {
+                curr_wood += height - mid;
+            }
+        }
+        
+        if (curr_wood >= B) {
+            max_H = mid;
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return max_H;
+}
