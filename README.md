@@ -1,4 +1,3 @@
-# Code-the-Escape
 # Code The Escape
 
 A C++ implementation of a maze-solving system that finds a valid path between a start and destination point using graph traversal algorithms. The project demonstrates the use of Breadth First Search (BFS), Depth First Search (DFS), path reconstruction, and grid-based traversal techniques.
@@ -8,8 +7,7 @@ A C++ implementation of a maze-solving system that finds a valid path between a 
 - Find paths in a 2D maze environment
 - Breadth First Search (BFS) traversal
 - Depth First Search (DFS) traversal
-- Shortest path discovery using BFS
-- Parent tracking for path reconstruction
+- Parent tracking for path reconstructio
 - Obstacle and boundary validation
 - Coordinate-based path visualization
 - Efficient grid exploration using queues and recursion
@@ -60,7 +58,7 @@ S1110
 ```text
 Path found! Length: 9
 Path coordinates:
-(0,0) -> (0,1) -> (0,2) -> ...
+(0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (3,3) -> (3,4) -> (4,4)
 ```
 
 ## Project Structure
@@ -111,11 +109,10 @@ maze_solver.exe
 ## Future Improvements
 
 - Weighted pathfinding using Dijkstra's Algorithm
-- A* Search implementation
 - Graphical maze visualization
 - Multiple source and destination support
 - Dynamic maze generation
 
 ---
 
-Developed as part of the **Code The Escape** problem-solving assignment to strengthen algorithmic thinking, graph traversal, and pathfinding concepts.
+
