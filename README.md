@@ -1,4 +1,3 @@
-# Code The Escape
 
 A C++ implementation of a maze-solving system that finds a valid path between a start and destination point using graph traversal algorithms. The project demonstrates the use of Breadth First Search (BFS), Depth First Search (DFS), path reconstruction, and grid-based traversal techniques.
 
