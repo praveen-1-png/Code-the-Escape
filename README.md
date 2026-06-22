@@ -6,7 +6,7 @@ A C++ implementation of a maze-solving system that finds a valid path between a 
 - Find paths in a 2D maze environment
 - Breadth First Search (BFS) traversal
 - Depth First Search (DFS) traversal
-- Parent tracking for path reconstructio
+- Parent tracking for path reconstruction
 - Obstacle and boundary validation
 - Coordinate-based path visualization
 - Efficient grid exploration using queues and recursion
